@@ -1,0 +1,65 @@
+servico:
+  - servicoid: 1
+    codigoservico: 00
+    servico: RESERVADO
+    situacao: VISIVEL
+  - servicoid: 2
+    codigoservico: 01
+    servico: GPS
+    situacao: VISIVEL 
+  - servicoid: 3
+    codigoservico: 02
+    servico: SDCARD
+    situacao: VISIVEL 
+  - servicoid: 4
+    codigoservico: 03
+    servico: CAMERA
+    situacao: VISIVEL  
+  - servicoid: 5
+    codigoservico: 04
+    servico: KEYBOARD
+    situacao: VISIVEL  
+  - servicoid: 6
+    codigoservico: 05
+    servico: DISPLAY
+    situacao: VISIVEL
+  - servicoid: 7
+    codigoservico: 06
+    servico: MODEM 3G
+    situacao: VISIVEL  
+  - servicoid: 8
+    codigoservico: 07
+    servico: WIFI
+    situacao: VISIVEL
+  - servicoid: 9
+    codigoservico: 08
+    servico: ETHERNET
+    situacao: VISIVEL
+  - servicoid: 10
+    codigoservico: 09
+    servico: BANCO DE DADOS
+    situacao: VISIVEL
+  - servicoid: 11
+    codigoservico: 10
+    servico: AUTENTICADOR
+    situacao: VISIVEL
+  - servicoid: 12
+    codigoservico: 11
+    servico: AUDIO
+    situacao: VISIVEL   
+  - servicoid: 13
+    codigoservico: 12
+    servico: MICROFONE
+    situacao: VISIVEL
+  - servicoid: 14
+    codigoservico: 13
+    servico: BATERRY
+    situacao: VISIVEL
+  - servicoid: 15
+    codigoservico: 14
+    servico: BLUETOOTH
+    situacao: VISIVEL
+  - servicoid: 16
+    codigoservico: 15
+    servico: GENERAL STATUS
+    situacao: VISIVEL                                         

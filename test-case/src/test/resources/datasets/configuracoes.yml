@@ -1,0 +1,91 @@
+configuracao: 
+  - configuracaoid: 1
+    chave: ipServidor
+    valor: 127.0.0.1
+    situacao: VISIVEL
+    problemaHorus: NAOGRAVE
+    servico_id_pk: 1
+  - configuracaoid: 2
+    chave: portaServidor
+    valor: 8081
+    situacao: VISIVEL
+    problemaHorus: NAOGRAVE
+    servico_id_pk: 1
+  - configuracaoid: 3
+    chave: sd_card_espaco_livre_so
+    valor: 140804.1
+    situacao: VISIVEL
+    problemaHorus: NAOGRAVE
+    servico_id_pk: 3  
+  - configuracaoid: 4
+    chave: sd_card_espaco_dados_livre
+    valor: 132620.74
+    situacao: VISIVEL
+    problemaHorus: NAOGRAVE
+    servico_id_pk: 3
+  - configuracaoid: 5
+    chave: status_bateria
+    valor: 1
+    situacao: VISIVEL
+    problemaHorus: GRAVE
+    servico_id_pk: 14
+  - configuracaoid: 6
+    chave: status_camera
+    valor: 1
+    situacao: VISIVEL
+    problemaHorus: GRAVE
+    servico_id_pk: 4
+  - configuracaoid: 7
+    chave: status_teclado
+    valor: 1
+    situacao: VISIVEL
+    problemaHorus: NAOGRAVE
+    servico_id_pk: 5
+  - configuracaoid: 8
+    chave: status_microfone
+    valor: 1
+    situacao: VISIVEL
+    problemaHorus: GRAVE
+    servico_id_pk: 13
+  - configuracaoid: 9
+    chave: status_wifi
+    valor: 1
+    situacao: VISIVEL
+    problemaHorus: GRAVE
+    servico_id_pk: 8
+  - configuracaoid: 10
+    chave: status_3g
+    valor: 1
+    situacao: VISIVEL
+    problemaHorus: NAOGRAVE
+    servico_id_pk: 7
+  - configuracaoid: 11
+    chave: camera_modo_gravacao
+    valor: 1
+    situacao: VISIVEL
+    problemaHorus: NAOGRAVE
+    servico_id_pk: 4
+  - configuracaoid: 12
+    chave: camera_fps
+    valor: 1
+    situacao: VISIVEL
+    problemaHorus: NAOGRAVE
+    servico_id_pk: 4
+  - configuracaoid: 13
+    chave: camera_resolucao
+    valor: 1
+    situacao: VISIVEL
+    problemaHorus: NAOGRAVE
+    servico_id_pk: 4           
+  - configuracaoid: 14
+    chave: bateria_nivel
+    valor: 70.00
+    situacao: VISIVEL
+    problemaHorus: GRAVE
+    servico_id_pk: 14
+  - configuracaoid: 15
+    chave: status_gps
+    valor: 1
+    situacao: VISIVEL
+    problemaHorus: GRAVE
+    servico_id_pk: 2                                                     
