@@ -53,8 +53,8 @@ public class ConfiguracaoRepositoryTest {
 
         war.addAsLibraries(jar);
 
-        LOGGER.info("ConfiguracaoRepositoryTest.war\n\n" + war.toString(true) + "\n\n");
-        LOGGER.info("ConfiguracaoRepositoryTest.jar\n\n" + jar.toString(true) + "\n\n");
+        LOGGER.info("ConfiguracaoRepositoryTest.war\n\n {} {}", war.toString(true), "\n\n");
+        LOGGER.info("ConfiguracaoRepositoryTest.jar\n\n {} {}", jar.toString(true), "\n\n");
 
         return war;
 
