@@ -255,6 +255,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>${maven.eclipse.version}</version>
 				<configuration>
 					<wtpversion>2.0</wtpversion>
 					<downloadSources>false</downloadSources>
