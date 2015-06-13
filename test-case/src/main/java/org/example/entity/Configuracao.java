@@ -19,9 +19,9 @@ import javax.validation.constraints.NotNull;
 import org.hibernate.envers.Audited;
 
 @NamedQueries({
-        @NamedQuery(name = "Configuracao.buscarTodas", query = "SELECT c FROM Configuracao c WHERE c.situacao = 'VISIVEL'"),
-        @NamedQuery(name = "Configuracao.buscarPorChave", query = "SELECT c FROM Configuracao c WHERE c.chave = :chave AND c.situacao = :situacao"),
-        @NamedQuery(name = "Configuracao.buscarPorFiltros", query = "SELECT c FROM Configuracao c WHERE c.chave LIKE :chave AND c.situacao = :situacao") })
+    @NamedQuery(name = "Configuracao.buscarTodas", query = "SELECT c FROM Configuracao c WHERE c.situacao = 'VISIVEL'"),
+    @NamedQuery(name = "Configuracao.buscarPorChave", query = "SELECT c FROM Configuracao c WHERE c.chave = :chave AND c.situacao = :situacao"),
+    @NamedQuery(name = "Configuracao.buscarPorFiltros", query = "SELECT c FROM Configuracao c WHERE c.chave LIKE :chave AND c.situacao = :situacao") })
 @Entity
 @Audited
 @Table

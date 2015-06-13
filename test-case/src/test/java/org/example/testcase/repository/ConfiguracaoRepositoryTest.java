@@ -42,14 +42,14 @@ public class ConfiguracaoRepositoryTest {
     @Deployment
     public static Archive<?> createArchive() {
         WebArchive war = ShrinkWrap.create(WebArchive.class, "ConfiguracaoRepositoryTest.war")
-                .addAsLibraries(Libraries.getLogLibraries()).addAsLibraries(Libraries.getCDILibraries())
-                .addAsLibraries(Libraries.getDroolsLibraries())
-                .addAsWebInfResource(EmptyAsset.INSTANCE, ArchivePaths.create("beans.xml"));
+            .addAsLibraries(Libraries.getLogLibraries()).addAsLibraries(Libraries.getCDILibraries())
+            .addAsLibraries(Libraries.getDroolsLibraries())
+            .addAsWebInfResource(EmptyAsset.INSTANCE, ArchivePaths.create("beans.xml"));
 
         JavaArchive jar = ((JavaArchive) ModulesHelper.getConfiguracaoRepositoryTest()).addAsManifestResource(
-                EmptyAsset.INSTANCE, ArchivePaths.create("beans.xml")).addAsManifestResource(
-                new File(StaticProvider.getPersistenceDescriptors().get(TipoBanco.H2DATABASE.getTipoBanco())),
-                ArchivePaths.create("persistence.xml"));
+            EmptyAsset.INSTANCE, ArchivePaths.create("beans.xml")).addAsManifestResource(
+            new File(StaticProvider.getPersistenceDescriptors().get(TipoBanco.H2DATABASE.getTipoBanco())),
+            ArchivePaths.create("persistence.xml"));
 
         war.addAsLibraries(jar);
 

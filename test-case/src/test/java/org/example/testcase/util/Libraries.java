@@ -70,9 +70,9 @@ public class Libraries {
 
         if (!libs.containsKey(artifact)) {
             MavenDependencyResolver res = DependencyResolvers.use(MavenDependencyResolver.class)
-                    .loadMetadataFromPom(pathToModuleWithPomXML).artifact(artifact);
+                .loadMetadataFromPom(pathToModuleWithPomXML).artifact(artifact);
             libs.put(artifact,
-                    strictFilter ? res.resolveAs(JavaArchive.class, new StrictFilter()) : res.resolveAs(JavaArchive.class));
+                strictFilter ? res.resolveAs(JavaArchive.class, new StrictFilter()) : res.resolveAs(JavaArchive.class));
         }
         return libs.get(artifact);
 

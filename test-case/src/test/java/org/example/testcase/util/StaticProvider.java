@@ -23,11 +23,11 @@ public class StaticProvider implements Serializable {
         IMPORTS.put("import-operacaosync", "src/test/resources/imports/import-operacaosync.sql");
 
         PERSISTENCEDB.put(TipoBanco.POSTGRESQL.getTipoBanco(),
-                "src/test/resources/resources-jbossas-remote/test-persistence-postgres.xml");
+            "src/test/resources/resources-jbossas-remote/test-persistence-postgres.xml");
         PERSISTENCEDB.put(TipoBanco.H2DATABASE.getTipoBanco(),
-                "src/test/resources/resources-jbossas-remote/test-persistence-in-h2database.xml");
+            "src/test/resources/resources-jbossas-remote/test-persistence-in-h2database.xml");
         PERSISTENCEDB.put(TipoBanco.HSQLDB.getTipoBanco(),
-                "src/test/resources/resources-jbossas-remote/test-persistence-in-hsqldb.xml");
+            "src/test/resources/resources-jbossas-remote/test-persistence-in-hsqldb.xml");
     }
 
     public static Map<String, String> getImports() {
@@ -40,7 +40,9 @@ public class StaticProvider implements Serializable {
 
     public enum TipoBanco {
 
-        POSTGRESQL("postgres"), H2DATABASE("h2database"), HSQLDB("hsqldb");
+        POSTGRESQL("postgres"),
+        H2DATABASE("h2database"),
+        HSQLDB("hsqldb");
 
         private String tipoBanco;
 

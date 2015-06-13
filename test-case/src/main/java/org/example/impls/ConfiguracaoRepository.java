@@ -82,7 +82,7 @@ public class ConfiguracaoRepository implements IConfiguracaoRepository, Serializ
         Root<Configuracao> configuracao = query.from(Configuracao.class);
         Join<Configuracao, Servico> servico = configuracao.join("servico", JoinType.LEFT);
         query.where(cb.notEqual(servico.get("codigoServico"), codigoServicoReservado)).where(
-                cb.notEqual(servico.get("servico"), nomeServico));
+            cb.notEqual(servico.get("servico"), nomeServico));
 
         TypedQuery<Configuracao> configuracaoQuery = crudConfiguracao.getEntityManager().createQuery(query);
         return configuracaoQuery.getResultList();
@@ -93,9 +93,9 @@ public class ConfiguracaoRepository implements IConfiguracaoRepository, Serializ
 
         if (configuracao != null) {
             List<Configuracao> ConfiguracaosEncontrados = crudConfiguracao.findWithNamedQuery(Configuracao.class,
-                    "Configuracao.buscarPorChave",
-                    QueryParameter.with("chave", configuracao.getChave()).and("situacao", configuracao.getSituacao())
-                            .parameters());
+                "Configuracao.buscarPorChave",
+                QueryParameter.with("chave", configuracao.getChave()).and("situacao", configuracao.getSituacao())
+                    .parameters());
             if (ConfiguracaosEncontrados.size() == 1) {
                 return ConfiguracaosEncontrados.get(0);
             } else {
@@ -110,8 +110,8 @@ public class ConfiguracaoRepository implements IConfiguracaoRepository, Serializ
     public List<Configuracao> buscarConfiguracaoPorFiltros(Configuracao configuracao) {
 
         return crudConfiguracao.findWithNamedQuery(Configuracao.class, "Configuracao.buscarPorFiltros",
-                QueryParameter.with("chave", "%" + configuracao.getChave() + "%").and("situacao", configuracao.getSituacao())
-                        .parameters());
+            QueryParameter.with("chave", "%" + configuracao.getChave() + "%").and("situacao", configuracao.getSituacao())
+                .parameters());
     }
 
     public Map<String, String> getMapaConfiguracoes(List<Configuracao> configuracoes) {

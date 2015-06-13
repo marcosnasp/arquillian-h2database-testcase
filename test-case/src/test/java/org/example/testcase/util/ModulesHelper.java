@@ -19,21 +19,22 @@ import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
 
 public class ModulesHelper {
-    
-    private ModulesHelper() { }
+
+    private ModulesHelper() {
+    }
 
     public static Archive<?> getConfiguracaoRepositoryTest() {
         return ShrinkWrap
-                .create(JavaArchive.class, "ConfiguracaoRepositoryTest.jar")
-                .addClasses(ConfiguracaoRepository.class, IConfiguracaoRepository.class)
-                .addClasses(Configuracao.class, Servico.class, ProblemaHorus.class, Situacao.class)
-                .addClasses(CrudServiceBean.class, CrudService.class, QueryParameter.class, DataRepositoryProducer.class,
-                        DataRepository.class);
+            .create(JavaArchive.class, "ConfiguracaoRepositoryTest.jar")
+            .addClasses(ConfiguracaoRepository.class, IConfiguracaoRepository.class)
+            .addClasses(Configuracao.class, Servico.class, ProblemaHorus.class, Situacao.class)
+            .addClasses(CrudServiceBean.class, CrudService.class, QueryParameter.class, DataRepositoryProducer.class,
+                DataRepository.class);
     }
 
     public static Archive<?> getConfiguracaoRepositoryTest(final TipoBanco tipoBanco) {
         return ((JavaArchive) getConfiguracaoRepositoryTest())
-                .addAsManifestResource(new File(StaticProvider.getPersistenceDescriptors().get(tipoBanco.getTipoBanco())));    
+            .addAsManifestResource(new File(StaticProvider.getPersistenceDescriptors().get(tipoBanco.getTipoBanco())));
     }
-           
+
 }

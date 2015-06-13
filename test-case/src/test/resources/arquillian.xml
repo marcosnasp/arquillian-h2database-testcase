@@ -23,5 +23,5 @@
 		<property name="defaultDataSetFormat">YAML</property>
 		<property name="datatypeFactory">org.dbunit.ext.hsqldb.HsqldbDataTypeFactory</property>
 	</extension>
-	
+
 </arquillian>
